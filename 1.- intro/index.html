@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- Documento es HTML 5 -->
+<html lang="es"> <!-- Idioma español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación incluye acentos, tildes, ñ, etc  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro a HTML</title>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+
+    <p>
+        Este es un párrafo para nuestro sitio web.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, provident enim obcaecati minima dolore repellat nam voluptate deserunt soluta aperiam at? Minima rem deserunt in unde voluptate et voluptatibus illo.
+    </p>
+
+    <a href="http://google.com">Ir a otro sitio web</a>
+
+    <p>
+        Esta es la etiquete de <strong>strong o negritas</strong> <br> y esta es la etiqueta de <em>énfasis o itálica</em>
+    </p>
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+        <li>Despertar</li>
+        <li>Lavarme los dientes</li>
+        <li>Hacer café</li>
+        <li>Entrar a la clase</li>
+    </ol>
+
+    <h2>Lista Desordenada</h2>
+    <ul>
+        <li>Leer</li>
+        <li>Jugar videojuegos</li>
+        <li>Hacer ejercicio</li>
+        <li>Música</li>
+        <li>Estar con la familia</li>
+    </ul>
+
+    <h2>Tabla</h2>
+    <table>
+        <thead> <!-- Encabezado de Tabla -->
+            <tr>
+                <th>Encabezado 1</th> <!-- Celda del encabezado -->
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Columna 1.1</td>
+                <td>Columna 1.2</td>
+                <td>Columna 1.3</td>
+            </tr>
+            <tr>
+                <td>Columna 2.1</td>
+                <td>Columna 2.2</td>
+                <td>Columna 2.3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="images/gatito.jpg" alt="Imagen de un Gatito" >
+
+    <div></div>
+
+    <form action="/url-a-la-que-mandamos" method="post" >
+        <div>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" maxlength="10">
+            <input type="number" name="numero" >
+            <input type="password" name="contra" >
+            <input type="date" name="fecha" >
+            <input type="email" name="correo" placeholder="Correo Electrónico" >
+        </div>
+        <div>
+            <input type="radio" name="estado_civil" value="casado" id="id_casado" >
+            <label for="id_casado">Casado</label><br>
+            <input type="radio" name="estado_civil" value="soltero" id="id_soltero" >
+            <label for="id_soltero">Soltero</label>
+        </div>
+        <div>
+            <input type="checkbox" name="terminos_condiciones" id="terminos" >
+            <label for="terminos">
+                Acepto Términos y Condiciones 
+                <a href="www.google.com">Ver</a> 
+            </label>
+        </div>
+        <div>
+            <textarea name="comentario" cols="15" rows="20" ></textarea>
+        </div>
+        <div>
+            <select name="comida">
+                <option>Pizza</option>
+                <option>Sushi</option>
+                <option>Lasaña</option>
+                <option>Pollo Frio</option>
+                <option>Tacos</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Enviar Formulario">
+        </div>
+    </form>
+
+</body>
+</html>
