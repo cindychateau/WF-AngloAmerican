@@ -1,0 +1,149 @@
+/* CSS - Cascade Style Sheets */
+/*
+SELECTORES BÁSICOS:
+
+etiqueta {
+    propiedad: valor;
+}
+
+.clase {
+    propiedad: valor;
+}
+
+#id {
+    propiedad: valor;
+}
+
+*/
+
+h2 {
+    color: blue;
+    font-size: 50px;
+}
+
+.red {
+    color: red;
+}
+
+.tacha {
+    text-decoration: line-through;
+}
+
+.bold {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#parrafo_especial {
+    border: 2px solid green;
+    border-radius: 20px;
+}
+
+#green {
+    color: green;
+}
+
+/*Jerarquía: ID, CLASE, ETIQUETA*/
+
+p strong { /*Etiqueta strong que está dentro de párrafo*/
+    text-transform: uppercase;
+}
+/*
+.red strong
+#parrafo_especial em
+.tacha .abc
+*/
+
+.container > p { /*Descendiente directo*/
+    border: 1px dotted red;
+}
+
+a.red { /*Ambos selectores se deben cumplir*/
+    text-decoration: overline;
+}
+/*
+h2.under
+.red.under
+p.abc
+*/
+
+input[type="text"] {
+    width: 500px;
+}
+
+input[type="number"] {
+    height: 100px;
+}
+
+input, textarea {
+    border: 3px solid magenta;
+}
+/*
+input {
+    border: 3px solid magenta;
+}
+textarea {
+    border: 3px solid magenta;
+}
+*/
+
+/*COLORES*/
+.color {
+    /*Cambio de color de letra*/
+    /* color: magenta; */
+    /* color: #519c65;  */
+    color: rgb(165, 162, 228);
+    background-color: green;
+}
+
+/*TEXTO*/
+#texto {
+    text-align: center; /*left, center, right, justify*/
+    text-decoration: underline; /*underline, line-through, none, overline*/
+    text-transform: capitalize; /*capitalize, uppercase, lowercase*/
+    font-style: italic; /*italic, normal*/
+    font-weight: bold; /*bold, normal, light, 100, 300, 900*/
+    font-size: 20px;
+    font-family: sans-serif; /*sans-serif, serif, monospace, cursive*/
+    text-shadow: 13px 10px 5px rgba(111,111,111,0.72);
+}
+
+/*TAMAÑO*/
+.tamano {
+    background-color: lightpink;
+    width: 400px; /*ANCHO*/
+    height: 50px; /*ALTO*/
+}
+
+/*FONDO*/
+.background {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+
+    background-color: aqua;
+    background-image: url(../images/gatito_small.jpg);
+    background-repeat: no-repeat; /*no-repeat, repeat-x, repeat-y*/
+    background-position: center;
+    background-size: cover; /*cover: estira vertical, contain: estira horizontal*/
+}
+
+/*MODELO DE CAJA*/
+#box_model {
+    background-color: rebeccapurple;
+    width: 100px;
+    height: 100px;
+    /*Margin es el espacio entre mi caja y el resto de la página*/
+    /* margin: 20px; */
+    margin-top: 20px; /*-top, -right, -bottom, -left*/
+    margin: 50px 15px; /*ArribaAbajo IzqDer*/
+    margin: 50px 10px 100px 200px; /*arr der aba izq*/
+    /*Padding margen interno */
+    padding: 20px;
+    padding-top: 20px;
+    padding: 50px 15px;
+    padding: 10px 30px 100px 50px;
+    border: 3px solid black; /*solid dotted dashed double*/
+    /*margin: 0 auto; centra horizontalmente*/
+}
+

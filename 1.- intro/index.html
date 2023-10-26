@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> <!-- Codificación incluye acentos, tildes, ñ, etc  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro a HTML</title>
+    <link rel="stylesheet" href="css/style.css" >
 </head>
 <body>
     <h1>Título 1</h1>
@@ -13,19 +14,32 @@
     <h5>Título 5</h5>
     <h6>Título 6</h6>
 
-    <p>
+    <p id="green" class="red tacha bold">
         Este es un párrafo para nuestro sitio web.
     </p>
 
-    <p>
+    <p id="parrafo_especial">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, provident enim obcaecati minima dolore repellat nam voluptate deserunt soluta aperiam at? Minima rem deserunt in unde voluptate et voluptatibus illo.
     </p>
 
-    <a href="http://google.com">Ir a otro sitio web</a>
+    <a class="red" href="http://google.com">Ir a otro sitio web</a>
 
     <p>
         Esta es la etiquete de <strong>strong o negritas</strong> <br> y esta es la etiqueta de <em>énfasis o itálica</em>
     </p>
+    <strong>Otro strong</strong>
+
+    <div class="container">
+        <p>Párrafo Hijo</p>
+        <a href="#">Enlace Hijo</a>
+        <div>
+            <p>Párrafo Nieto</p>
+        </div>
+        <p>Otro párrafo</p>
+    </div>
+    <div class="tacha">
+        <div class="abc"></div>
+    </div>
 
     <h2>Lista Ordenada</h2>
     <ol>
@@ -109,6 +123,14 @@
             <input type="submit" value="Enviar Formulario">
         </div>
     </form>
-
+    <h3 class="color">Prueba de Color</h3>
+    <p id="texto">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vero tempora explicabo voluptatibus incidunt at iusto eius assumenda rerum amet, et quidem magni quos minus vel dolor molestiae consectetur nesciunt!
+    </p>
+    <div class="tamano"></div>
+    <div class="background"></div>
+    <div id="box_model">
+        Caja
+    </div>
 </body>
 </html>
