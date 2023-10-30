@@ -16,6 +16,13 @@ etiqueta {
 
 */
 
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 h2 {
     color: blue;
     font-size: 50px;
@@ -147,3 +154,37 @@ textarea {
     /*margin: 0 auto; centra horizontalmente*/
 }
 
+#box_model:hover {
+    cursor: pointer;
+    background-color: magenta;
+}
+
+.inline {
+    /*Me despliega los elementos en una sola línea. PERO no puedo dar tamaño*/
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    /*Me despliega los elementos en una misma línea y me permite colocar un tamaño*/
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    vertical-align: middle; /*top, bottom, middle*/
+}
+
+#div1 {
+    height: 300px;
+}
+
+#div2 {
+    height: 50px;
+}
+
+#div3 {
+    height: 150px;
+}
