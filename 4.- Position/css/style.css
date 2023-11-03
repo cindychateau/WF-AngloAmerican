@@ -1,0 +1,32 @@
+/*CSS RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.container {
+    border: 3px solid black;
+    height: 1500px;
+    position: relative;
+}
+
+.element {
+    background-color: gray;
+    padding: 10px;
+    position: relative;
+}
+
+.main-element {
+    background-color: yellow;
+    padding: 10px;
+    /*position: static; /*Por Default. No se mueve*/
+    position: relative; /*Me permite mover elemento, se mueve en base a la posición original. No afecta el resto de los elementos */
+    /*position: absolute; /*Se va a mover basada en elemento padre (con position relative). Elementos alrededor me ignoran*/
+    /*position: fixed; /*Actua absolute PERO no se ve afectado por scroll*/
+    /*position: sticky; /*Posición original y al hacer scroll se pega a la pantalla*/
+
+    /*top, bottom, left, right*/
+    top: 20px;
+    left: 15px;
+}
