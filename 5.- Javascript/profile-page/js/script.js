@@ -34,3 +34,28 @@ function hicimos_click(elemento) {
     elemento.style.backgroundColor = "red";
 }
 
+function editar_perfil() {
+    var nombre = document.querySelector("#name"); // nombre = <h1 id="name">Jane Doe</h1>
+
+    var input = document.querySelector('#nombre'); //Seleccionando elemento input
+
+    if(input.value == "") {
+        nombre.innerText = "Elena de Troya";
+    } else {
+        nombre.innerText = input.value;
+    }
+    
+    var locacion = document.querySelector('.location');
+    locacion.innerHTML = '<img src="icons/map-marker.png" alt="pin" class="icon-s"> Roma';
+
+    var parrafo = document.querySelector(".jobs");
+    parrafo.innerText = "Desarrolladora, Ingeniera y Reina de Troya";
+}
+
+function eliminar_persona() {
+    /*
+    var fila = document.querySelector("#fila-todd");
+    fila.remove();
+    */
+    document.querySelector("#fila-todd").remove();
+}
