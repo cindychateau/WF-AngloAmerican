@@ -1,0 +1,84 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    background-color: lightblue;
+}
+
+nav {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*height: Xpx*/
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /*Quitar viñetas*/
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav h1, nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.san-jose {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+}
+
+.semana {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5%; /*Solo los huecos y siempre y cuando tenga display flex*/
+    margin-top: 20px;
+}
+
+.dia {
+    /* border: 1px solid black; /*temp
+    height: 100px;temp */
+    flex: 1; /*1/4*/
+    text-align: center;
+    background-color: lightgray;
+    padding: 25px 0;
+}
+
+.dia img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.temperaturas {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.max {
+    color: red;
+}
+
+.min {
+    color: blue;
+}
