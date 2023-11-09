@@ -14,9 +14,9 @@
         <nav>
             <h1>Dojo Weather</h1>
             <ul>
-                <li><a href="#">Burbank</a></li>
-                <li><a href="#">Chicago</a></li>
-                <li><a href="#">Dallas</a></li>
+                <li><a onclick="alerta(this)" href="#">Burbank</a></li>
+                <li><a onclick="alerta(this)" href="#">Chicago</a></li>
+                <li><a onclick="alerta(this)" href="#">Dallas</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +25,7 @@
             <h2>San José</h2>
             <form>
                 <label>mostrar temperatura en:</label>
-                <select>
+                <select onchange="cambiar_temperatura()">
                     <option>C</option>
                     <option>F</option>
                 </select>
@@ -33,12 +33,12 @@
         </div>
         <div class="semana">
             <div class="dia">
-                <h3>Hoy</h3>
+                <h3 id="prueba">Hoy</h3>
                 <img src="assets/some_rain.png" alt="some rain">
                 <p>some rain</p>
                 <div class="temperaturas">
-                    <span class="max">24</span>
-                    <span class="min">18</span>
+                    <span class="max" id="temp0">24</span>
+                    <span class="min" id="temp1">18</span>
                 </div>
             </div>
             <div class="dia">
@@ -46,8 +46,8 @@
                 <img src="assets/some_rain.png" alt="some rain">
                 <p>some rain</p>
                 <div class="temperaturas">
-                    <span class="max">24</span>
-                    <span class="min">18</span>
+                    <span class="max" id="temp2">24</span>
+                    <span class="min" id="temp3">18</span>
                 </div>
             </div>
             <div class="dia">
@@ -55,8 +55,8 @@
                 <img src="assets/some_rain.png" alt="some rain">
                 <p>some rain</p>
                 <div class="temperaturas">
-                    <span class="max">24</span>
-                    <span class="min">18</span>
+                    <span class="max" id="temp4">24</span>
+                    <span class="min" id="temp5">18</span>
                 </div>
             </div>
             <div class="dia">
@@ -64,12 +64,24 @@
                 <img src="assets/some_rain.png" alt="some rain">
                 <p>some rain</p>
                 <div class="temperaturas">
-                    <span class="max">24</span>
-                    <span class="min">18</span>
+                    <span class="max" id="temp6">24</span>
+                    <span class="min" id="temp7">18</span>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="cookies">
+            <img src="assets/cookie.png" alt="cookie">
+            <div>
+                <h4>Stop! Cookie Time</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos nisi minima nostrum. Eum, at impedit esse quaerat quidem <a href="#">Leer más</a>
+                </p>
+            </div>
+            <button onclick="eliminar_cookies()">Aceptar</button>
+        </div>
+    </footer>
     <script src="js/script.js" ></script>
 </body>
 </html>
